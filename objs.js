@@ -56,11 +56,63 @@ const animals = [
         "name": "Rhinocerous"
     },
     {
-        "pic": "images/.png",
-        "name": ""
+        "pic": "images/bear.png",
+        "name": "Bear"
     },
     {
-        "pic": "images/.png",
-        "name": ""
+        "pic": "images/bunny.png",
+        "name": "Bunny"
+    },
+    {
+        "pic": "images/capybara.png",
+        "name": "Capybara"
+    },
+    {
+        "pic": "images/elephant.png",
+        "name": "Elephant"
+    },    
+    {
+        "pic": "images/fugu.png",
+        "name": "Fugu"
+    },    
+    {
+        "pic": "images/horse.png",
+        "name": "Horse"
+    },    
+    {
+        "pic": "images/leopard.png",
+        "name": "Leopard"
+    },    
+    {
+        "pic": "images/lizard.png",
+        "name": "Lizard"
+    },   
+    {
+        "pic": "images/panther.png",
+        "name": "Panther"
+    },    
+    {
+        "pic": "images/shark.png",
+        "name": "Shark"
+    },   
+    {
+        "pic": "images/snake.png",
+        "name": "Snake"
+    },   
+    {
+        "pic": "images/tiger.png",
+        "name": "Tiger"
+    },    
+    {
+        "pic": "images/wolf.png",
+        "name": "Wolf"
+    },
+    {
+        "pic": "images/deer.png",
+        "name": "Deer"
+    },
+    {
+        "pic": "images/monkey.png",
+        "name": "Monkey"
     },
 ]

@@ -48,8 +48,8 @@ h1{
     z-index: 1;
 }
 
-.flag {
-    width: 50%;
+.animal {
+    width: 80%;
     position: absolute;
     margin-top: 8%;
     border: 1px solid #aaa;

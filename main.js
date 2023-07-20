@@ -1,4 +1,4 @@
-let seconds = 25;
+let seconds = 2;
 let correctAnswer = 0
 let incorrectAnswer = 0
 
@@ -10,6 +10,7 @@ function timer() {
 setTimeout(finish, seconds * 1000)
   getElement("time").innerHTML = seconds;
   let countdown = setInterval(function () {
+    main();
     seconds--;
     getElement("time").textContent = seconds;
     if (seconds <= 0) {
@@ -48,6 +49,15 @@ function finish(){
     getElement("alertaccuracy").innerHTML = `Ձեր արդյունքն է ${percentage}%`
 }
 
-let checkInterval = setInterval(check, 50)
+let checkInterval = setInterval(check, 50);
 
 timer();
+
+function getRandomAnimal(){
+  return animals[Math.floor(Math.random(animals.length-1) * 10)];
+}
+
+function main(){
+  animal = getRandomAnimal();
+  getElement("animal").src = animal.pic
+}
