@@ -1,4 +1,5 @@
-let seconds = 2;
+let correct;
+let seconds = 25;
 let correctAnswer = 0
 let incorrectAnswer = 0
 
@@ -10,7 +11,6 @@ function timer() {
 setTimeout(finish, seconds * 1000)
   getElement("time").innerHTML = seconds;
   let countdown = setInterval(function () {
-    main();
     seconds--;
     getElement("time").textContent = seconds;
     if (seconds <= 0) {
@@ -34,30 +34,54 @@ function check() {
         input = document.querySelector('input[name = "option"]:checked').value
     } catch{
         return;
-    }if (input === "Lion"){
+    }if (input === correct.name){
         correctAnswer++
         getElement("score").innerHTML = correctAnswer;
     } else {
-        incorrectAnswer++
+        incorrectAnswer++;
     }
-    clearInterval(checkInterval)
+    main()
 }
 
 function finish(){
     clearInterval(checkInterval);
-    let percentage = (correctAnswer / (correctAnswer + incorrectAnswer)) * 100;
+    let percentage = Math.round(correctAnswer / (correctAnswer + incorrectAnswer)) * 100;
+    if(isNaN(percentage)){
+      resultForAnswers = 100
+    }else{
+      if(percentage >= 75 && percentage < 95){
+        resultForAnswers = "Լավ է"
+      }else if (percentage <= 95){
+        resultForAnswers = "Գերազանց է"
+      }
+    }
     getElement("alertaccuracy").innerHTML = `Ձեր արդյունքն է ${percentage}%`
 }
 
 let checkInterval = setInterval(check, 50);
-
+main();
 timer();
 
 function getRandomAnimal(){
-  return animals[Math.floor(Math.random(animals.length-1) * 10)];
+  return animals[Math.round(Math.random() * (animals.length - 1))];
 }
 
 function main(){
-  animal = getRandomAnimal();
-  getElement("animal").src = animal.pic
+  let options = []
+  const maxOptions = 3
+   while(options.length < maxOptions) {
+     let animal = getRandomAnimal();
+     if(options.indexOf(animal) === -1) {
+       options.push(animal);
+     } 
+   }
+   for (let i = 0; i < options.length; i++){
+     getElement(`option${i + 1}label`).innerHTML = options[i].name;
+     getElement(`option${i + 1}label`).value = options[i].name;
+     getElement(`option${i + 1}label`).checked = false
+   }
+
+   correct = options[Math.round(Math.random() * (options.length - 1))]
+  getElement("animal").src = correct.pic;
 }
+console.log(animals.length)

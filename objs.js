@@ -115,4 +115,16 @@ const animals = [
         "pic": "images/monkey.png",
         "name": "Monkey"
     },
+    {
+        "pic": "images/crocodile.png",
+        "name": "Crocodile"
+    },
+    {
+        "pic": "images/peacock.png",
+        "name": "Peacock"
+    },
+    {
+        "pic": "images/penguin.png",
+        "name": "Penguin"
+    },
 ]
