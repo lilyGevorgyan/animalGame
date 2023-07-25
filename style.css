@@ -44,16 +44,17 @@ h1{
     background-color: #aaa;
     content: "";
     min-height: 10px;
-    height: 90%;
+    height: 86%;
     z-index: 1;
 }
 
 .animal {
     width: 80%;
     position: absolute;
-    margin-top: 8%;
+    /* margin-top: -11%; */
     border: 1px solid #aaa;
     margin-bottom: 20%;
+    margin-left: -70px;
 }
 
 #optionhalf {
@@ -81,8 +82,8 @@ h1{
 
 #alert {
     display: none;
-    padding: 40px 40px 60px 40px;
-    width: 20vw;
+    padding: 100px 100px 100px 100px;
+    width: 60vw;
     font-size: 2rem;
 }
 
@@ -126,7 +127,7 @@ h1{
 .button {
     width: 100px;
     height: 40px;
-    background: rgb(9, 108, 35);
+    background: rgb(163, 68, 235);
     border: 1px solid #ccc;
     border-radius: 4px;
     height: 30px;
