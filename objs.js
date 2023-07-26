@@ -135,4 +135,28 @@ const animals = [
         "pic": "images/sparrow.png",
         "name": "Sparrow"
     },
+    {
+        "pic": "images/pig.png",
+        "name": "Pig"
+    },
+    {
+        "pic": "images/rat.png",
+        "name": "Rat"
+    },    
+    {
+        "pic": "images/hampster.png",
+        "name": "Hampster"
+    },
+    {
+        "pic": "images/sloth.png",
+        "name": "Sloth"
+    },
+    {
+        "pic": "images/zebra.png",
+        "name": "Zebra"
+    },
+    {
+        "pic": "images/donkey.png",
+        "name": "Donkey"
+    },
 ]

@@ -1,5 +1,5 @@
 let correct;
-let seconds = 25;
+let seconds = 60;
 let correctAnswer = 0
 let incorrectAnswer = 0
 
@@ -94,3 +94,4 @@ function main() {
 function refresh() {
   location = location;
 }
+console.log(animals.length)
